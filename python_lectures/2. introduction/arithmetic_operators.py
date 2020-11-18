@@ -50,7 +50,8 @@ TO GET THE LAST DIGIT OF ANY NUMBER WE WILL DO % 10
 IF WE DO ANY NO mod K then the values will lie between [0 - (K - 1)]
  
 >>> n % 10 -> [0 - 9] here K is 10
->>> n % 5  -> [0 - 5] here K is 5
+>>> n % 5  -> [0 - 4] here K is 5
 
 
 """
+
