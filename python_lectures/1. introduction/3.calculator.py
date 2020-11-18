@@ -17,3 +17,5 @@ no2 = float(input())
 
 
 print(no1 - no2)
+
+int("abc")
