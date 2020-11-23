@@ -14,6 +14,9 @@ break;
 break is used inside a loop and it will break 
 the nearest loop it is part of.
 
+continue;
+continue will skip the code below it and will
+jump to the loop beginning.
 
 
 """
