@@ -8,3 +8,4 @@ class Car:
     registration_no: int
     color: str
 
+w
