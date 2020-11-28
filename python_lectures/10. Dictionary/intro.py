@@ -64,6 +64,7 @@ state_capital_dict = {
     "delhi": "Punjab",
 }
 
+"Cities" in state_capital_dict
 
 account = {
     1: "Rohan",
@@ -83,9 +84,69 @@ for key, value in state_capital_dict.items():
 
 
 """
+
+# in
+
+# 33 in [1,3, 4, 5, 6,10]
+
+
+# finding the max value
+
+# # [4, 5, 6, 1, 2, 3, 4]
+# A = [4, 5, 6, 1, 2, 3, 4]
+# max_val = A[0]
+
+# for i in range(1, len(A)):
+#     if A[i] > max_val:
+#         max_val = A[i]
+
+# print(max_val)
+
+
 # how we create a dictionary
 
 
 # Q1. Given a list with values [1, 2, 1, 1, 1, 2, 3, 4, 5 , 5]
 # Tell me the frequency of each value eg 1 -> 4, 2 -> 2, 3 - > 1, 4 - > 1, 5 -> 2
 
+
+parties = ["Congress", "BJP", "BJP", "BJP", "AAP", "AAP"]
+
+party_dict = dict()
+
+for party in parties:
+    if party in party_dict:
+        party_dict[party] += 1
+    else:
+        party_dict[party] = 1
+
+
+{
+    "Congress": 1,
+    "BJP": 3,
+    "AAP": 2,
+}
+
+
+
+winning_party = ""
+max_votes = 0
+
+for key in party_dict.keys():
+    if max_votes < party_dict[key]:
+        max_votes = party_dict[key]
+        winning_party = key
+
+
+# 
+s = "a boy is good."
+
+l = ["a", "and", "is", "good"]
+
+
+res = ""
+for word in l:
+    if word == "and":
+        res += ","
+    else:
+        res += word
