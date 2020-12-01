@@ -9,7 +9,8 @@ class Dog(Animal):
         parent can be initialized.
         """
         print("Dog constructor is called")
-        super().__init__(name, no_of_legs, has_tail)
+        super().__init__(name, no_of_legs)
+        self.has_tail = has_tail
 
     def bark(self):
         """
