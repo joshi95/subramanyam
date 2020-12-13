@@ -88,6 +88,7 @@ jump to the loop beginning.
 #          cnt2 += 1
 #     cnt1 += 1
 
+#leetcode
 
 n = 3
 no = 1
@@ -99,3 +100,10 @@ while no <= n:
 print(sum)
 
 
+
+
+i = 0
+while i < n:
+    while i < n / 2:
+        i += 1
+    i += 1
