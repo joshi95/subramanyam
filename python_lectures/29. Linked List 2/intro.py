@@ -11,6 +11,18 @@ def printList(head):
         cur = cur.next
 
 
+def reverseLinkedListUsingRecurssion(head, prev):
+    if head is None:
+        return None
+    
+    if head.next is None:
+        head.next = prev
+        return head
+    new_head = reverseLinkedListUsingRecurssion(head.next, head)
+    head.next = prev
+    return new_head
+
+
 def reverseLinkedList(head):
     prev = None
     cur = head
@@ -68,9 +80,9 @@ if __name__ == "__main__":
     print("head1 list ")
     printList(head1)
 
-    reversed_list = reverseLinkedList(head1)
+    new_list = reverseLinkedListUsingRecurssion(head1, None)
     print("reversed list is")
-    printList(reversed_list)
+    printList(new_list)
     print()
 
     # head2 = Node(1)
