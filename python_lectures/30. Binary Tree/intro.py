@@ -35,6 +35,6 @@ if __name__ == "__main__":
 
     root.left.right = Node(100)
     root.left.left = Node(50)
-
+    
     inorder(root)
 
