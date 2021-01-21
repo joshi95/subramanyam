@@ -36,5 +36,3 @@ if __name__ == "__main__":
     dp = [[None for _ in range(1000)] for _ in range(1000)]
     print(solve("ABCED", "XEDCBEADDECED", 0, 0, dp))
 
-
-0 1 2 3 4 5 
